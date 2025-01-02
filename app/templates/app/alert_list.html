@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+
+<a href="{% url 'alert_create' %}">+ New Blog Post</a>
+ <div class="nav-right">
+ </div>
+    {% for alert in alerts %}
+    <div class="post-entry">
+        <h2><a href="{% url 'alert_detail' alert.pk %}">{{ alert.title }}</a></h2>
+    </div>
+    
+{% endfor %}
+{% endblock content %}

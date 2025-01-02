@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
-    <h1>Hello World</h1>
-<img class ="mylogo" src="{% static 'images/logo.png' %}">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Barangay Disaster Preparedness Portal</h1>
+            <p>Managing Risks, Saving Lives</p>
+            <a href="#" class="cta-button">Start Preparing</a>
+            <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        </div>
+    </section>
+
 {% endblock content %}
